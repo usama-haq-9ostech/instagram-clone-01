@@ -7,6 +7,7 @@ import Search from "./src/components/screens/Search";
 import Reels from "./src/components/screens/Reels";
 import Activity from "./src/components/screens/Activity";
 import Profile from "./src/components/screens/Profile";
+import Status from "./src/components/screenComponents/Status";
 
 export default function App() {
   const Stack = createNativeStackNavigator();
@@ -59,6 +60,7 @@ export default function App() {
         }}
       >
         <Stack.Screen name="Bottom" component={BottomTabScreen} />
+        <Stack.Screen name="Status" component={Status} />
       </Stack.Navigator>
     </NavigationContainer>
   );

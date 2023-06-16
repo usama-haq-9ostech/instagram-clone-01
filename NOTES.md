@@ -21,3 +21,5 @@
   - [React Native Icons](https://www.npmjs.com/package/react-native-vector-icons)
     - `npm i react-native-vector-icons`
 
+- npm install --global expo-cli
+

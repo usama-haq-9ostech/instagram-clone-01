@@ -21,7 +21,7 @@ const Status = ({ route, navigation }) => {
     }, 5000);
 
     Animated.timing(progress, {
-      topValue: new Animated.Value(5),
+      toValue: new Animated.Value(5),
       duration: 5000,
       useNativeDriver: false,
     }).start();

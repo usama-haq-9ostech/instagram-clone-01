@@ -11,6 +11,7 @@
     - `npm install @react-navigation/native`
     - `npx expo install react-native-screens react-native-safe-area-context`
     - `npm install react-native-screens react-native-safe-area-context`
+      - `npx expo install react-native-safe-area-context@4.5.0` : Error while running NPM START
     - `npm install @react-navigation/native-stack`
     - Tab Navigation
       - `npm install @react-navigation/bottom-tabs`

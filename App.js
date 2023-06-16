@@ -1,5 +1,3 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -18,6 +16,7 @@ export default function App() {
       <Tab.Navigator
         screenOptions={({ route }) => ({
           tabBarShowLabel: false,
+          headerShown: false,
           tabBarStyle: {
             height: 50,
           },
@@ -25,7 +24,6 @@ export default function App() {
             let iconName;
             if (route.name === "Home") {
               iconName = focused ? "home-sharp" : "home-outline";
-              size = focused ? size + 8 : size + 2;
             } else if (route.name === "Search") {
               iconName = focused ? "search" : "ios-search-outline";
             } else if (route.name === "Search") {

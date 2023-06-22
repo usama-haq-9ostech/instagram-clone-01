@@ -27,6 +27,7 @@ const Videos = {
   video2: require("./videos/video2.mp4"),
   video3: require("./videos/video3.mp4"),
   video4: require("./videos/video4.mp4"),
+  video5: require("./videos/video5.mp4"),
 };
 
 export const Storage = {

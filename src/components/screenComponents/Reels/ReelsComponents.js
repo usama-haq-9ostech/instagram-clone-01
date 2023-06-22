@@ -16,9 +16,14 @@ const ReelsComponents = () => {
       vertical={true}
       onChangeIndex={handleIndexChange}
       renderItem={({ item, index }) => (
-        <SingleReel item={item} index={index} currentIndex={currentIndex} />
+        <SingleReel
+          key={index}
+          item={item}
+          index={index}
+          currentIndex={currentIndex}
+        />
       )}
-      keyExtractor={({ item, index }) => index}
+      keyExtractor={(item, index) => index}
     />
   );
 };

@@ -65,6 +65,14 @@ export const VideoData = [
     likes: "54k",
     isLiked: true,
   },
+  {
+    video: Storage.Videos.video5,
+    profilePic: Storage.Images.profile5,
+    title: "John Wick",
+    description: "Best!",
+    likes: "2.2M",
+    isLiked: true,
+  },
 ];
 
 export const PostInfo = [

@@ -3,8 +3,8 @@ import React from "react";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import Feather from "react-native-vector-icons/Feather";
 import Ionic from "react-native-vector-icons/Ionicons";
-import Stories from "../screenComponents/Stories";
-import Post from "../screenComponents/Post";
+import Stories from "../screenComponents/Home/Stories";
+import Post from "../screenComponents/Home/Post";
 
 const Home = () => {
   return (

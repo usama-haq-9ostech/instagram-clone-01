@@ -4,42 +4,12 @@ import Feather from "react-native-vector-icons/Feather";
 import AntDesign from "react-native-vector-icons/AntDesign";
 import Ionic from "react-native-vector-icons/Ionicons";
 import Entypo from "react-native-vector-icons/Entypo";
+import PostInfo from "../../../Data";
 
 const Post = () => {
-  const postInfo = [
-    {
-      postTitle: "Mr. Smith",
-      postPersonImage: require("../../storage/images/userProfile.png"),
-      postImage: require("../../storage/images/post1.jpg"),
-      likes: 786,
-      isLiked: false,
-    },
-    {
-      postTitle: "Chicken",
-      postPersonImage: require("../../storage/images/profile1.jpg"),
-      postImage: require("../../storage/images/post2.jpg"),
-      likes: 12,
-      isLiked: false,
-    },
-    {
-      postTitle: "Warrior",
-      postPersonImage: require("../../storage/images/profile2.jpg"),
-      postImage: require("../../storage/images/post3.jpg"),
-      likes: 23,
-      isLiked: false,
-    },
-    {
-      postTitle: "Buddy",
-      postPersonImage: require("../../storage/images/profile3.jpg"),
-      postImage: require("../../storage/images/post4.jpg"),
-      likes: 96,
-      isLiked: false,
-    },
-  ];
-
   return (
     <View>
-      {postInfo.map((data, index) => {
+      {PostInfo.map((data, index) => {
         const [liked, setLiked] = useState(data.isLiked);
 
         const handleIncrement = useCallback(() => {

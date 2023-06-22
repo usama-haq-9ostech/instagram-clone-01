@@ -1,43 +1,11 @@
 import { View, Image, TouchableOpacity, Touchable } from "react-native";
 import React from "react";
+import SearchData from "../../../Data";
 
 const SearchContent = (props) => {
-  const searchData = [
-    {
-      id: 0,
-      images: [
-        require("../../storage/images/post1.jpg"),
-        require("../../storage/images/post2.jpg"),
-        require("../../storage/images/post3.jpg"),
-        require("../../storage/images/post4.jpg"),
-        require("../../storage/images/post5.jpg"),
-        require("../../storage/images/post6.jpg"),
-      ],
-    },
-    {
-      id: 1,
-      images: [
-        require("../../storage/images/post7.jpg"),
-        require("../../storage/images/post8.jpg"),
-        require("../../storage/images/post9.jpg"),
-        require("../../storage/images/post10.jpg"),
-        require("../../storage/images/post11.jpg"),
-        require("../../storage/images/post12.jpg"),
-      ],
-    },
-    {
-      id: 2,
-      images: [
-        require("../../storage/images/post13.jpg"),
-        require("../../storage/images/post14.jpg"),
-        require("../../storage/images/post15.jpg"),
-      ],
-    },
-  ];
-
   return (
     <View>
-      {searchData.map((data, index) => {
+      {SearchData.map((data, index) => {
         return (
           <>
             {data.id === 0 ? (

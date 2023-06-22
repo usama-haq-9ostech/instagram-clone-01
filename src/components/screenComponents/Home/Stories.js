@@ -1,56 +1,19 @@
-import {
-  View,
-  Text,
-  ScrollView,
-  Touchable,
-  TouchableOpacity,
-  Image,
-} from "react-native";
+import { View, Text, ScrollView, TouchableOpacity, Image } from "react-native";
 import React from "react";
 import Entypo from "react-native-vector-icons/Entypo";
 import { useNavigation } from "@react-navigation/native";
+import { StoryInfo } from "../../../Data";
 
 const Stories = () => {
   const navigation = useNavigation();
-  const storyInfo = [
-    {
-      id: 1,
-      name: "Your story",
-      image: require("../../storage/images/userProfile.png"),
-    },
-    {
-      id: 0,
-      name: "Sam David",
-      image: require("../../storage/images/profile1.jpg"),
-    },
-    {
-      id: 0,
-      name: "Tom Holland",
-      image: require("../../storage/images/profile2.jpg"),
-    },
-    {
-      id: 0,
-      name: "The Groot",
-      image: require("../../storage/images/profile3.jpg"),
-    },
-    {
-      id: 0,
-      name: "The Rock",
-      image: require("../../storage/images/profile4.jpg"),
-    },
-    {
-      id: 0,
-      name: "John Cena",
-      image: require("../../storage/images/profile5.jpg"),
-    },
-  ];
+
   return (
     <ScrollView
       horizontal={true}
       showsHorizontalScrollIndicator={false}
       style={{ paddingVertical: 20 }}
     >
-      {storyInfo.map((data, index) => {
+      {StoryInfo.map((data, index) => {
         return (
           <TouchableOpacity
             key={index}

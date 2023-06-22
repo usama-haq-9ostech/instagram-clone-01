@@ -8,8 +8,8 @@ import {
   Text,
 } from "react-native";
 import React, { useState } from "react";
-import SearchBox from "../screenComponents/SearchBox";
-import SearchContent from "../screenComponents/SearchContent";
+import SearchBox from "../screenComponents/Search/SearchBox";
+import SearchContent from "../screenComponents/Search/SearchContent";
 import AntDesign from "react-native-vector-icons/AntDesign";
 import Ionic from "react-native-vector-icons/Ionicons";
 import Feather from "react-native-vector-icons/Feather";

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import SwiperFlatList from "react-native-swiper-flatlist";
-import VideoData from "../../../Data";
+import { VideoData } from "../../../Data";
 import SingleReel from "./SingleReel";
 
 const ReelsComponents = () => {

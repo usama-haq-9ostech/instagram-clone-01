@@ -4,7 +4,7 @@ import Feather from "react-native-vector-icons/Feather";
 import AntDesign from "react-native-vector-icons/AntDesign";
 import Ionic from "react-native-vector-icons/Ionicons";
 import Entypo from "react-native-vector-icons/Entypo";
-import PostInfo from "../../../Data";
+import { PostInfo } from "../../../Data";
 
 const Post = () => {
   return (

@@ -1,6 +1,6 @@
 import { View, Image, TouchableOpacity, Touchable } from "react-native";
 import React from "react";
-import SearchData from "../../../Data";
+import { SearchData } from "../../../Data";
 
 const SearchContent = (props) => {
   return (
